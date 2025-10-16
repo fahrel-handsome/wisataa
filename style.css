@@ -289,19 +289,18 @@ footer {
     color: white;
 }
 
-/* --- Responsive Design --- */
-/* --- Responsive Design (GANTI SELURUH BLOK INI) --- */
+/* --- Responsive Design (INI ADALAH SATU-SATUNYA BAGIAN YANG PERLU DIGANTI) --- */
 @media (max-width: 768px) {
-    /* Mengurangi ukuran font judul utama */
+    /* Mengurangi ukuran font judul di hero section */
     .hero-content h1 {
-        font-size: 2.8rem; /* Lebih kecil dari 4rem */
+        font-size: 2.8rem;
     }
 
     .hero-content p {
-        font-size: 1.1rem; /* Sedikit lebih kecil */
+        font-size: 1.1rem;
     }
     
-    /* Mengubah tata letak filter menjadi vertikal */
+    /* Mengubah filter destinasi menjadi vertikal */
     .filter-controls {
         flex-direction: column;
         align-items: center;
@@ -318,35 +317,35 @@ footer {
         gap: 15px;
         padding: 20px;
         border-radius: 30px;
-        width: 95%; /* Sedikit penyesuaian untuk layar sempit */
+        width: 95%;
     }
 
     .nav-links {
-        gap: 25px; /* Mengurangi jarak antar link */
+        gap: 25px; /* Mengurangi jarak antar link navbar */
     }
 
-    /* Mengurangi ukuran font judul section */
+    /* Mengurangi ukuran font semua judul section (h2) */
     section h2 {
         font-size: 1.8rem;
     }
 
-    /* Mengubah tata letak bagian populer menjadi vertikal */
+    /* Mengubah layout bagian "Pilih Petualangan" menjadi vertikal */
     .popular-container {
-        grid-template-columns: 1fr; /* Tumpuk layout di HP */
+        grid-template-columns: 1fr; /* Membuatnya menjadi 1 kolom */
         text-align: center;
     }
 
     .popular-text h2 {
-        font-size: 2.2rem; /* Kecilkan juga font ini */
+        font-size: 2.2rem; /* Mengecilkan judul "Pilih Petualangan Anda" */
     }
 
     .popular-cards-wrapper {
-        margin-top: 30px;
+        margin-top: 30px; /* Memberi jarak antara teks dan kartu */
     }
     
-    /* Mengubah tata letak form kontak menjadi vertikal */
+    /* Mengubah layout form kontak menjadi vertikal */
     .contact-container {
-        grid-template-columns: 1fr; /* Tumpuk layout di HP */
+        grid-template-columns: 1fr;
     }
 }
 
