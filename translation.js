@@ -112,26 +112,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- LOGIKA VALIDASI FORMULIR KONTAK ---
+    // --- VALIDASI FORMULIR KONTAK ---
     const contactForm = document.getElementById('get-in-touch-form');
     if (contactForm) {
         const successMessage = document.getElementById('success-message');
         const errorMessage = document.getElementById('error-message');
         
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Mencegah form submit default
+            e.preventDefault(); 
 
-            // Sembunyikan pesan-pesan sebelumnya
             successMessage.style.display = 'none';
             errorMessage.style.display = 'none';
 
-            // Ambil nilai dari setiap field
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const subject = document.getElementById('subject').value.trim();
             const message = document.getElementById('message').value.trim();
 
-            // Fungsi validasi email sederhana
             function isValidEmail(email) {
                 const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 return re.test(String(email).toLowerCase());
@@ -149,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ======== KODE BARU: LOGIKA LIGHTBOX ========
+    // ======== LOGIKA LIGHTBOX ========
     const lightbox = document.getElementById('lightbox');
     if (lightbox) {
         const lightboxImg = document.getElementById('lightbox-img');
@@ -176,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ======== KODE BARU: LOGIKA HIGHLIGHT KATEGORI DARI URL ========
+    // ======== LOGIKA HIGHLIGHT KATEGORI DARI URL ========
     const highlightCategory = () => {
         if (window.location.hash) {
             const category = window.location.hash.substring(1);
@@ -194,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     highlightCategory();
 
-    // ======== KODE BARU: SCROLL TO TOP ========
+    // ======== SCROLL TO TOP ========
     const scrollTopBtn = document.getElementById('scrollTopBtn');
 
     if(scrollTopBtn) {

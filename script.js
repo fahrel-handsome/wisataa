@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // =======================================================
-    // BAGIAN TERJEMAHAN BAHASA (DIPERBARUI DENGAN KUNCI BARU)
+    // BAGIAN TERJEMAHAN BAHASA 
     // =======================================================
 
     const translations = {
@@ -63,13 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
 const langButton = document.getElementById('lang-button');
     const langOptions = document.querySelectorAll('.lang-dropdown a');
-    let currentLang; // Dihapus inisialisasinya di sini agar lebih bersih
+    let currentLang; 
 
 const setLanguage = (lang) => {
         currentLang = lang;
         document.documentElement.lang = lang;
         
-        // PERUBAHAN DI BARIS BERIKUTNYA
+    
         const flag = lang === 'id' ? 'https://flagcdn.com/id.svg' : 'https://flagcdn.com/gb.svg';
         langButton.querySelector('img').src = flag;
         langButton.querySelector('span').textContent = lang.toUpperCase();
@@ -99,7 +99,7 @@ const setLanguage = (lang) => {
     });
 
     // =======================================================
-    // BAGIAN REKOMENDASI WISATA (KODE ANDA YANG ASLI)
+    // BAGIAN REKOMENDASI WISATA 
     // =======================================================
     
 const tourismData = {
@@ -1103,11 +1103,10 @@ const tourismData = {
     });
 
     // =======================================================
-    // BAGIAN BARU: ANIMASI SCROLL DENGAN INTERSECTION OBSERVER
+    // ANIMASI SCROLL DENGAN INTERSECTION OBSERVER
     // =======================================================
     const popularSection = document.querySelector('.popular-destinations');
 
-    // Cek jika elemen ada di halaman ini untuk menghindari error
     if (popularSection) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -1124,7 +1123,7 @@ const tourismData = {
         observer.observe(popularSection);
     }
 
-    // ======== KODE BARU: SCROLL TO TOP ========
+    // ======== SCROLL TO TOP ========
     const scrollTopBtn = document.getElementById('scrollTopBtn');
 
     if(scrollTopBtn) {
@@ -1143,6 +1142,6 @@ const tourismData = {
 
     // --- Inisialisasi ---
     populateProvinces();
-    // Langsung membaca dari localStorage saat inisialisasi untuk memastikan konsistensi
+
     setLanguage(localStorage.getItem('language') || 'id');
 });
