@@ -290,15 +290,18 @@ footer {
 }
 
 /* --- Responsive Design --- */
+/* --- Responsive Design (GANTI SELURUH BLOK INI) --- */
 @media (max-width: 768px) {
+    /* Mengurangi ukuran font judul utama */
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem; /* Lebih kecil dari 4rem */
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Sedikit lebih kecil */
     }
     
+    /* Mengubah tata letak filter menjadi vertikal */
     .filter-controls {
         flex-direction: column;
         align-items: center;
@@ -309,23 +312,39 @@ footer {
         max-width: 350px;
     }
     
+    /* Mengubah navbar menjadi vertikal dan lebih rapi */
     nav {
         flex-direction: column;
-        gap: 10px;
-        padding: 15px;
-        border-radius: 20px;
-        width: 95%; 
+        gap: 15px;
+        padding: 20px;
+        border-radius: 30px;
+        width: 95%; /* Sedikit penyesuaian untuk layar sempit */
     }
 
+    .nav-links {
+        gap: 25px; /* Mengurangi jarak antar link */
+    }
+
+    /* Mengurangi ukuran font judul section */
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Mengubah tata letak bagian populer menjadi vertikal */
     .popular-container {
         grid-template-columns: 1fr; /* Tumpuk layout di HP */
         text-align: center;
     }
 
+    .popular-text h2 {
+        font-size: 2.2rem; /* Kecilkan juga font ini */
+    }
+
     .popular-cards-wrapper {
         margin-top: 30px;
     }
-
+    
+    /* Mengubah tata letak form kontak menjadi vertikal */
     .contact-container {
         grid-template-columns: 1fr; /* Tumpuk layout di HP */
     }
