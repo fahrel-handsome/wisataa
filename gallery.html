@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="title_gallery">Galeri - Pesona Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">Pesona Nusantara</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-lang="nav_home">Mau Kemana?</a></li> 
+            <li><a href="gallery.html" class="active" data-lang="nav_gallery">Galeri</a></li> <li><a href="about.html" data-lang="nav_about">Tentang Indonesia</a></li>
+        </ul>
+        <div class="lang-selector">
+            <button id="lang-button">
+                <img src="https://flagcdn.com/id.svg" alt="Bendera Indonesia">
+                <span>ID</span>
+            </button>
+            <ul class="lang-dropdown">
+                <li><a href="#" data-lang-code="id"><img src="https://flagcdn.com/id.svg" alt="Bendera Indonesia"> Indonesia</a></li>
+                <li><a href="#" data-lang-code="en"><img src="https://flagcdn.com/gb.svg" alt="Bendera Inggris"> English</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <video autoplay loop muted playsinline id="hero-video">
+            <source src="videos/background2.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+
+        <div class="hero-content">
+            <h1 data-lang="hero_title_gallery">Galeri Pesona Indonesia</h1>
+            <p data-lang="hero_subtitle_gallery">Lihat Keindahan Indonesia Melalui Lensa</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://unesco.or.id/wp-content/uploads/2025/09/Gunung-Bromo.jpg" alt="Bromo">
+                    <div class="overlay"><h3>Gunung Bromo</h3></div>
+                </div>
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://indonesiajuara.asia/wp-content/uploads/2023/11/raja-ampat_11zon.webp" alt="Raja Ampat">
+                    <div class="overlay"><h3>Raja Ampat</h3></div>
+                </div>
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://ik.imagekit.io/tvlk/blog/2024/11/Ubud-1024x768.png?tr=q-70,c-at_max,w-500,h-300,dpr-2" alt="Tegalalang">
+                    <div class="overlay"><h3>Sawah Terasering Tegalalang</h3></div>
+                </div>
+                <div class="gallery-item" data-category="pantai">
+                    <img src="https://unair.ac.id/wp-content/uploads/2020/11/Ilustrasi-oleh-detikTravel.jpeg" alt="Komodo">
+                    <div class="overlay"><h3>Pulau Komodo</h3></div>
+                </div>
+                <div class="gallery-item" data-category="budaya">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJt7aIEVBl9NnP8AGYAfw7sXjxB9Uwi6xVeQ&s" alt="Borobudur">
+                    <div class="overlay"><h3>Candi Borobudur</h3></div>
+                </div>
+                <div class="gallery-item" data-category="budaya">
+                    <img src="https://heppitrip.com/assets/img/Pura-Uluwatu.jpg" alt="Uluwatu">
+                    <div class="overlay"><h3>Pura Uluwatu</h3></div>
+                </div>
+                <div class="gallery-item" data-category="budaya">
+                    <img src="https://tiketwisata.surabaya.go.id/storage/tour/monumen-tugu-pahlawan_1680340884.jpeg" alt="Monumen Pahlawan">
+                    <div class="overlay"><h3>Monumen Tugu Pahlawan</h3></div>
+                </div>
+                <div class="gallery-item" data-category="budaya">
+                    <img src="https://www.rentalmobilbali.net/wp-content/uploads/2019/12/Sunset-Pura-Tanah-Lot-Bali-Feature-Image.jpg" alt="Tanah Lot">
+                    <div class="overlay"><h3>Tanah Lot</h3></div>
+                </div>
+                <div class="gallery-item" data-category="budaya">
+                    <img src="https://www.rentalmobilbali.net/wp-content/uploads/2022/09/feature-image-pura-ulun-danu-beratan-bedugul.webp" alt="Bedugul">
+                    <div class="overlay"><h3>Bedugul</h3></div>
+                </div>
+                <div class="gallery-item" data-category="budaya">
+                    <img src="https://lavatourmerapijogja.com/wp-content/uploads/2021/07/Keindahan-Candi-Prambanan.jpg" alt="Candi Prambanan">
+                    <div class="overlay"><h3>Candi Prambanan</h3></div>
+                </div>
+                <div class="gallery-item" data-category="pantai">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuu335F4fFmeVVJOar2fG6O6Y0kLu3xEUyw&s" alt="Pantai Kelingking">
+                    <div class="overlay"><h3>Pantai Kelingking, Nusa Penida</h3></div>
+                </div>
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://travelspromo.com/wp-content/uploads/2021/05/Lanskap-Segara-Anak-Gunung-Rinjani-e1621491834912.jpg" alt="Gunung Rinjani">
+                    <div class="overlay"><h3>Gunung Rinjani</h3></div>
+                </div>
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="https://cdn.yummy.co.id/content-images/images/20230927/YIKqjJQx7J7vlHkBrMlWzua3CxkFbeFQ-31363935373736373036d41d8cd98f00b204e9800998ecf8427e.jpg?x-oss-process=image/resize,w_600,h_600,m_fixed,image/format,webp" alt="Sate Ayam">
+                    <div class="overlay"><h3>Sate Ayam Madura</h3></div>
+                </div>
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://regalsprings.co.id/wp-content/uploads/2023/05/Danau-Toba.png" alt="Danau Toba">
+                    <div class="overlay"><h3>Danau Toba</h3></div>
+                </div>
+                <div class="gallery-item" data-category="budaya">
+                    <img src="https://akcdn.detik.net.id/community/media/visual/2020/10/24/patung-yesus-buntu-burake_169.jpeg?w=620" alt="Tana Toraja">
+                    <div class="overlay"><h3>Tana Toraja</h3></div>
+                </div>
+                <div class="gallery-item" data-category="pantai">
+                    <img src="https://asset.kompas.com/crops/QjIwvgNQsUZ8miqqZse4_CEyXmg=/0x0:780x390/1200x800/data/photo/2016/08/27/1046485pantai-21780x390.jpg" alt="Pantai Tanjung Tinggi">
+                    <div class="overlay"><h3>Pantai Tanjung Tinggi, Belitung</h3></div>
+                </div>
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://www.hipwee.com/wp-content/uploads/2021/07/hipwee-gajah-pinterest-2.jpg" alt="Gajah di Way Kambas">
+                    <div class="overlay"><h3>Taman Nasional Way Kambas</h3></div>
+                </div>
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://asset.kompas.com/crops/fu2SL2EKEzm5evOAXDv-SyvvD9Y=/0x0:1200x800/1200x800/data/photo/2021/08/19/611e162fed8b4.jpg" alt="Kawah Ijen">
+                    <div class="overlay"><h3>Kawah Ijen, Jawa Timur</h3></div>
+                </div>
+                <div class="gallery-item" data-category="pantai">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQLZPu6Aul1am6jriYgNGZhXfGhuUCl3PsSoXC2ibF7xQj5n0gBgxPWHJbojfxKWmAaFM7Msbrx1blMmOC0N99w_ZAoeUeDT4zyA9pVZGeSZSgxAWmxkWqrBY0ubJxf2Qrff4bdTVdgLc/s1600/Gili+Trawangan+3.jpg" alt="Gili Trawangan">
+                    <div class="overlay"><h3>Gili Trawangan, NTB</h3></div>
+                </div>
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxjq5JLNGD-e3wvYyAxg15u6Dx4gTBNu7mw&s" alt="Ngarai Sianok">
+                    <div class="overlay"><h3>Ngarai Sianok, Sumatera Barat</h3></div>
+                </div>
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="https://fibercreme.com/wp-content/uploads/2024/10/Rendang-Daging.jpeg" alt="Rendang">
+                    <div class="overlay"><h3>Rendang Khas Minang</h3></div>
+                </div>
+                <div class="gallery-item" data-category="alam">
+                    <img src="https://www.tournesia.com/blog/wp-content/uploads/2025/08/Taman-Nasional-Tanjung-Puting.jpg" alt="Tanjung Puting">
+                    <div class="overlay"><h3>Taman Nasional Tanjung Puting</h3></div>
+                </div>
+                <div class="gallery-item" data-category="budaya">
+                    <img src="https://www.batiqa.com/upload/news/l/pekanbaru-siak-sri-indrapura-1_1k6w3.jpg" alt="Istana Siak">
+                    <div class="overlay"><h3>Istana Siak, Riau</h3></div>
+                </div>
+                <div class="gallery-item" data-category="pantai">
+                    <img src="https://tourisminfo.nttprov.go.id/wp-content/uploads/2025/05/pinkbeach.jpg" alt="Pink Beach">
+                    <div class="overlay"><h3>Pink Beach, NTT</h3></div>
+                </div>
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="https://www.topwisata.info/wp-content/uploads/2024/11/Resep-Nasi-Goreng-Solaria.webp" alt="Nasi Goreng">
+                    <div class="overlay"><h3>Nasi Goreng Solaria</h3></div>
+                </div>
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="https://image.idntimes.com/post/20230520/screenshot-20230520-110427-instagram-619b73de30e98ea3184e8d055e505879.jpg" alt="Rujak Cingur">
+                    <div class="overlay"><h3>Rujak Cingur, Surabaya</h3></div>
+                </div>
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2020/12/30/ikan-bakar-jimbaran-bali-3.jpeg?w=600&q=90" alt="Ikan Bakar Jimbaran">
+                    <div class="overlay"><h3>Ikan Bakar Jimbaran</h3></div>
+                </div>
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/828/2024/02/26/IMG_20240226_164946-1046782557.jpg" alt="Soto Ayam">
+                    <div class="overlay"><h3>Soto Ayam Lamongan</h3></div>
+                </div>
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="https://buckets.sasa.co.id/v1/AUTH_Assets/Assets/p/website/medias/page_medias/es_pisang_ijo1.jpg" alt="Es Pisang Ijo">
+                    <div class="overlay"><h3>Es pisang ijo, Makassar</h3></div>
+                </div>
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7c9def0b-2864-4cb0-9227-3fa65614cb1d_Go-Biz_20230126_191302.jpeg" alt="Es Campur">
+                    <div class="overlay"><h3>Es Campur</h3></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang="footer_text">© 2025 Pesona Nusantara. Dibuat dengan Penuh Cinta.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    
+    <button id="scrollTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+    
+    <script src="translation.js"></script>
+</body>
+</html>

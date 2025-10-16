@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="title_home">Pesona Nusantara - Mau Kemana?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+        <div class="logo">
+            <a href="index.html">Pesona Nusantara</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active" data-lang="nav_home">Mau Kemana?</a></li>
+            <li><a href="gallery.html" data-lang="nav_gallery">Galeri</a></li>
+            <li><a href="about.html" data-lang="nav_about">Tentang Indonesia</a></li>
+        </ul>
+        <div class="lang-selector">
+            <button id="lang-button">
+                <img src="images/id.svg" alt="Bendera Indonesia">
+                <span>ID</span>
+            </button>
+            <ul class="lang-dropdown">
+                <li><a href="#" data-lang-code="id"><img src="https://flagcdn.com/id.svg" alt="Bendera Indonesia"> Indonesia</a></li>
+                <li><a href="#" data-lang-code="en"><img src="https://flagcdn.com/gb.svg" alt="Bendera Inggris"> English</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <video autoplay loop muted playsinline id="hero-video">
+            <source src="videos/background3.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+
+        <div class="hero-content">
+            <h1 data-lang="hero_title_home">Temukan Keindahan Tersembunyi Indonesia</h1>
+            <p data-lang="hero_subtitle_home">Jelajahi setiap sudut negeri yang penuh pesona dari gunung megah hingga pantai tropis yang memikat</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h2 data-lang="filter_title">Pilih Destinasi Anda</h2>
+            <div class="filter-controls">
+                <div class="select-container">
+                    <label for="province-select" data-lang="filter_province">Pilih Provinsi:</label>
+                    <select id="province-select">
+                        <option value="" data-lang="filter_province_option">-- Provinsi --</option>
+                    </select>
+                </div>
+                <div class="select-container">
+                    <label for="city-select" data-lang="filter_city">Pilih Kota/Kabupaten:</label>
+                    <select id="city-select" disabled>
+                        <option value="" data-lang="filter_city_option">-- Kota/Kabupaten --</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="wisata-results">
+            <h2 id="results-title" data-lang="results_title">Hasil Rekomendasi</h2>
+            <div id="wisata-container" class="wisata-grid">
+                <p class="placeholder" data-lang="results_placeholder">Silakan pilih provinsi dan kota untuk melihat rekomendasi wisata.</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="popular-destinations">
+        <div class="popular-container">
+            <div class="popular-text">
+                <h2 data-lang="popular_title">Pilih Petualangan Anda</h2>
+                <p data-lang="popular_subtitle">
+                    Indonesia menawarkan pengalaman luar biasa: dari menjelajahi hutan tropis hingga menikmati kekayaan budaya yang memukau. Selalu ada sesuatu untuk setiap wisatawan!
+                <a href="gallery.html" class="btn-secondary" data-lang="popular_button">Lihat Semua</a>
+            </div>
+            <div class="popular-cards-wrapper">
+                <div class="popular-cards">
+                    <a href="gallery.html#alam" class="popular-card" style="background-image: url('img/haikal.jpg');">
+                        <div class="card-content">
+                            <h3 data-lang="popular_card_nature">Alam</h3>
+                            <p data-lang="popular_card_nature_desc">Selami keindahan alam kami yang luas.</p>
+                        </div>
+                    </a>
+                    <a href="gallery.html#budaya" class="popular-card" style="background-image: url('img/fahrel.jpg');">
+                        <div class="card-content">
+                            <h3 data-lang="popular_card_culture">Budaya</h3>
+                            <p data-lang="popular_card_culture_desc">Rasakan kekayaan warisan budaya kami.</p>
+                        </div>
+                    </a>
+                    <a href="gallery.html#pantai" class="popular-card" style="background-image: url('img/arum.jpg');">
+                        <div class="card-content">
+                            <h3 data-lang="popular_card_beach">Pantai</h3>
+                            <p data-lang="popular_card_beach_desc">Bersantai di salah satu pantai surga kami.</p>
+                        </div>
+                    </a>
+                    <a href="gallery.html#kuliner" class="popular-card" style="background-image: url('img/fahrel1.jpg');">
+                         <div class="card-content">
+                            <h3 data-lang="popular_card_food">Kuliner</h3>
+                            <p data-lang="popular_card_food_desc">Cicipi cita rasa kuliner yang otentik.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p data-lang="footer_text">© 2025 Pesona Nusantara. Dibuat dengan Penuh Cinta.</p>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="title_about">Tentang Indonesia - Pesona Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">Pesona Nusantara</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-lang="nav_home">Mau Kemana?</a></li> 
+            <li><a href="gallery.html" data-lang="nav_gallery">Galeri</a></li>
+            <li><a href="about.html" class="active" data-lang="nav_about">Tentang Indonesia</a></li> </ul>
+        <div class="lang-selector">
+            <button id="lang-button">
+                <img src="https://flagcdn.com/id.svg" alt="Bendera Indonesia">
+                <span>ID</span>
+            </button>
+            <ul class="lang-dropdown">
+                <li><a href="#" data-lang-code="id"><img src="https://flagcdn.com/id.svg" alt="Bendera Indonesia"> Indonesia</a></li>
+                <li><a href="#" data-lang-code="en"><img src="https://flagcdn.com/gb.svg" alt="Bendera Inggris"> English</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  <header class="hero">
+        <video autoplay loop muted playsinline id="hero-video">
+            <source src="videos/background.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+
+        <div class="hero-content">
+            <h1 data-lang="hero_title_about">Tentang Indonesia</h1>
+            <p data-lang="hero_subtitle_about">Negara Kepulauan Zamrud Khatulistiwa</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2 data-lang="about_title_1">Sekilas Tentang Indonesia</h2>
+            <p data-lang="about_p_1"> ... </p>
+            <h3 data-lang="about_title_2">Keanekaragaman Hayati</h3>
+            <p data-lang="about_p_2"> ... </p>
+            <h3 data-lang="about_title_3">Budaya dan Suku Bangsa</h3>
+            <p data-lang="about_p_3"> ... </p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-details">
+                    <h2 data-lang="contact_details_title">Detail Kontak</h2>
+                    <p><strong>Adress:</strong> Jl. Citraland, No. 24, Surabaya, Indonesia</p>
+                    <p><strong>Phone Number:</strong> +62 812-3456-7890</p>
+                    <p><strong>Email:</strong> info@pesonanusantara.com</p>
+                </div>
+                <div class="contact-form-container">
+                    <h2 data-lang="contact_form_title">Hubungi Kami</h2>
+                    <form id="get-in-touch-form" novalidate>
+                        <input type="text" id="name" name="name" placeholder="Nama Anda" data-lang-placeholder="form_placeholder_name">
+                        <input type="email" id="email" name="email" placeholder="Email Anda" data-lang-placeholder="form_placeholder_email">
+                        <input type="text" id="subject" name="subject" placeholder="Subjek" data-lang-placeholder="form_placeholder_subject">
+                        <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" data-lang-placeholder="form_placeholder_message"></textarea>
+                        <button type="submit" data-lang="form_button_send">Kirim Pesan</button>
+                    </form>
+                    <div id="success-message" class="form-message success" data-lang="form_success_message">Pesan Anda telah berhasil terkirim. Terima kasih!</div>
+                    <div id="error-message" class="form-message error" data-lang="form_error_message">Gagal mengirim pesan. Mohon periksa kembali isian Anda.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang="footer_text">© 2025 Pesona Nusantara. Dibuat dengan Penuh Cinta.</p>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="translation.js"></script>
+</body>
+</html>
